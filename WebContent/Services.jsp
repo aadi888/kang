@@ -66,6 +66,34 @@
 		<!--[if lt IE 10]>
 		<link rel="stylesheet" media="screen" href="css/ie1.css">
 		<![endif]-->
+		
+		
+		
+		
+		<script>
+		$(document).ready(function(){
+			$(".bt-menu-trigger").toggle(
+				function(){
+					$('.bt-menu').addClass('bt-menu-open');
+				},
+				function(){
+					$('.bt-menu').removeClass('bt-menu-open');
+				}
+			);
+			$('.responsive').on('click', '.close', function(){
+				$('.close').remove();
+				bgColor = $('.active .card-front').css('background-color');
+				$('.responsive').removeClass(effect);
+				$('.all-content').hide();
+				$('.content li').removeClass('active').show().css({ 
+					'border-bottom':'1px solid #2c2c2c',
+					'border-left':'1px solid #2c2c2c' 
+				});
+				$('.card-front, .card-back').show();
+				$('.content').css('background-color',bgColor);
+			});
+		});
+		</script>
 	</head>
 	<body class="">
 <!--==============================header=================================-->
@@ -234,45 +262,22 @@ Fitting a patient for dentures does not have to be a traumatic experience. Durin
 									<div class="text2">Periodontal Therapy</div><br/>
 									<p>There have been major advances in non-surgical periodontal treatment for chronic periodontal disease. Our state-of-the-art ultrasonic scalers have been designed by a periodontist for maximum effectiveness on root surfaces. Antibiotic gels, which are placed below the gum line, reduce the need for periodontal surgery. And the latest innovation, a dental endoscope (camera) which can be placed below the gum line, further reduces the need for surgical treatment of periodontal disease.<br/>
 									<p>We take every opportunity to help you control your periodontal disease problem non-surgically and then reevaluate to determine the effectiveness of the treatment. If surgical treatment is required, the treatments maximize your comfort and your ability to regrow lost periodontal support.</p>
-									
-
-
-
-								</div>
+	</div>
 							</li>
 						</ul>
+						
 					</div>
-
-				</div>
-									
+					
+				</div>						
+				
 			</div>
-<%@include file="footer.html" %>			
-		</div>
-
 		
-		<script>
-		$(document).ready(function(){
-			$(".bt-menu-trigger").toggle(
-				function(){
-					$('.bt-menu').addClass('bt-menu-open');
-				},
-				function(){
-					$('.bt-menu').removeClass('bt-menu-open');
-				}
-			);
-			$('.responsive').on('click', '.close', function(){
-				$('.close').remove();
-				bgColor = $('.active .card-front').css('background-color');
-				$('.responsive').removeClass(effect);
-				$('.all-content').hide();
-				$('.content li').removeClass('active').show().css({ 
-					'border-bottom':'1px solid #2c2c2c',
-					'border-left':'1px solid #2c2c2c' 
-				});
-				$('.card-front, .card-back').show();
-				$('.content').css('background-color',bgColor);
-			});
-		});
-		</script>
-	</body>
+		
+			
+		</div>
+		
+			<%@include file="footer.html"%>
+		</body>
+
+	
 </html>
