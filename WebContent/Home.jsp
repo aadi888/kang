@@ -62,7 +62,7 @@
       <div class="page-header">
   <h1><font color="black">Healthy Smile, Healthy You</font><br/>
   <small>Your  smile:  simple, straightforward, and most importantly sincere,  can attract more than admiring looks...</small></h1><br/>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Schedule a Consultation</a></p>
+  <p><a class="btn btn-primary btn-lg" href="Appointments.jsp" role="button">Schedule a Consultation</a></p>
 </div>
       <!-- end -->
       </div>
@@ -76,7 +76,7 @@
 
        <h1><font color="black">Results You Will Love</font><br/>
   <small>Oral health is essential to general health and well-being. Our consultative approach is aimed toward  health literacy  so you can make informed health-related decisions.</small></h1><br/>
-   <p><a class="btn btn-primary btn-lg" href="#" role="button">Read More</a></p>
+   <p><a class="btn btn-primary btn-lg" href="Askme.jsp" role="button">Read More</a></p>
   
       </div>
     </div>
@@ -87,7 +87,7 @@
 
         <h1><font color="black">Relaxed and Friendly</font><br/>
   <small>We promise to provide you exceptional care as we enhance the natural beauty of your smile in a professional and welcoming setting.</small></h1><br/>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Schedule an Appointment</a></p>
+  <p><a class="btn btn-primary btn-lg" href="Appointments.jsp" role="button">Schedule an Appointment</a></p>
       </div>
     </div>
 

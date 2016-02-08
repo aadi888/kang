@@ -102,5 +102,55 @@
 
 <%@include file="footer.html" %>
 </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style>
 
+</style>
+<body>
+
+<div class="container">
+
+  <!-- Trigger the modal with a button -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Steps To Schedule An Appointment</h4>
+        </div>
+        <div class="modal-body">
+          <p><h4><span class="glyphicon glyphicon-hand-left"></span>STEP 1 : Check Dentist Avaibility From Calender . </h4></p>
+           <p><h4><span class="glyphicon glyphicon-hand-right"></span>STEP 2 : Fill The Form In Right .</h4> </p>
+           <p><h4><span class="glyphicon glyphicon-envelope"></span>STEP 3 : Our Dentist Will Send You Confirmation . </h4></p>
+            
+            <center><p><button type="button" class="btn btn-success" id="myBtn"><span class="glyphicon glyphicon-thumbs-up"></span> I Got it .</button></p></center>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ 
+<script>
+$(document).ready(function(){
+    // Show the Modal on load
+    $("#myModal").modal("show");
+    
+    // Hide the Modal
+    $("#myBtn").click(function(){
+        $("#myModal").modal("hide");
+    });
+});
+</script>
+
+</body>
 </html>
