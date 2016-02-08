@@ -110,7 +110,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Dr Kang's 2015</p>
+                    <p>Copyright &copy; Dr Kang's 2016</p>
                 </div>
             </div>
             <!-- /.row -->
